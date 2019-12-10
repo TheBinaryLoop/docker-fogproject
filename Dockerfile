@@ -4,7 +4,9 @@ LABEL Name=fogproject Version=1.5.7
 
 ENV VERSION=1.5.7
 
-RUN apt update && apt upgrade -y && apt install -y \
+RUN apt update && apt upgrade -y
+
+RUN apt install -y \
     clamav \
     clamav-daemon \
     wget \
